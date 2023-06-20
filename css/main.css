@@ -48,6 +48,15 @@
   z-index: 1;
   width: 1391px;
   margin: 36px -380px -25px -225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-contacts {
@@ -211,6 +220,7 @@
 }
 .technology-image img {
   border-radius: 20px;
+  width: 100%;
 }
 
 .technology-wrapper {
@@ -683,7 +693,7 @@
   content: "";
   position: absolute;
   right: -102px;
-  top: -60px;
+  top: -44px;
   background: -webkit-gradient(linear, right top, left top, color-stop(24.03%, #13285F), to(rgba(19, 40, 95, 0)));
   background: linear-gradient(270deg, #13285F 24.03%, rgba(19, 40, 95, 0) 100%);
   width: 574px;

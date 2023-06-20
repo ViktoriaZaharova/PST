@@ -1,0 +1,133 @@
+@import "vars"
+
+footer
+	padding: 0 0 56px
+	position: relative
+	z-index: 1
+	color: $blue
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		width: 1383px
+		height: 871px
+		background: url('../img/footer-figure.svg') no-repeat center
+		background-size: 100%
+		left: 0
+		bottom: 0
+	.logo
+		max-width: 96px
+		margin: 0 53px 0 0
+	.description-company
+		color: #315ED6
+		max-width: none
+		margin: 0 50px 0 0
+	.phone
+		color: #315ED6
+
+.footer-contact
+	margin: 0 0 -20px auto
+
+.vk-link
+	display: flex
+	align-items: center
+	color: #315ED6
+	margin: 15px 0 0
+	&:hover
+		color: $accent
+	img
+		margin: 0 10px 0 0
+		width: 30px
+
+.link-map
+	width: 100%
+	height: 166px
+	position: relative
+	@include d-flex
+	border-radius: 20px
+	color: #fff
+	text-align: center
+	font-size: 20px
+	line-height: 24px
+	&:hover
+		color: $accent
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border-radius: 20px
+		z-index: -1
+	.svg-icon
+		fill: #fff
+		width: 15px
+		height: 28px
+		margin: 0 0 0 11px
+	span
+		max-width: 90px
+
+.footer-wrapper
+	margin: 17px 0 0
+	width: 100%
+	display: flex
+	align-items: start
+	flex-wrap: wrap
+
+.footer-box
+	font-size: 20px
+	margin: 0 60px 0 0
+	min-width: 250px
+	&:nth-child(3)
+		
+		margin: 0
+	h4
+		color: $accent
+		margin: 0 0 10px
+		font-size: 16px
+		text-transform: uppercase	
+
+.link-phone
+	margin: 22px 0 0
+	font-weight: bold
+	font-size: 40px
+	line-height: 49px
+	color: $blue
+	&:hover
+		color: $accent
+
+.link-mail
+	margin: 6px 0 0
+
+.address
+	font-size: 20px
+	font-weight: 600
+	text-transform: uppercase
+	margin: 10px 0 0	
+
+.link-developer
+	display: flex
+	align-items: center
+	font-weight: 300
+	margin: 56px 0 0 50px
+	font-size: 16px
+	span
+		margin: 0 13px 0 0
+
+.footer-top
+	border-top: 1px solid #076AB4
+	padding: 70px 0 0
+
+.footer-bottom
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	margin: 48px 0 0
+	font-size: 14px
+	font-weight: 300
+	color: #315ED6
+
+.copyright
+	margin: 0 37px 0 0	

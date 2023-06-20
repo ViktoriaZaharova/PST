@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PST</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jQuery.countdownTimer.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+					<div class="description-company">Ремкомплекты для рулевых реек с доставкой</div>
+
+					<div class="header-contacts">
+						<a href="whatsapp://send?phone=+79379111234" class="messenger-link"><img src="img/whatsapp.svg" alt=""></a>
+						<a href="viber://chat?number=+79379111234" class="messenger-link"><img src="img/viber.svg" alt=""></a>
+						<a href="tel:+79379111234" class="phone">+7 937 911 1234</a>
+					</div>
+
+					<a href="#" class="btn btn-accent" data-bs-target="#callbackModal" data-bs-toggle="modal">обратный звонок</a>
+					<div class="btn-burger">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="home-content">
+						<h1>Доставка ремкомплектов
+							по всей России и странам СНГ</h1>
+						<div class="subtitle">На любую рулевую рейку</div>
+
+						<div class="home-advantages">
+							<div class="home-advantages-item">
+								<div class="home-advantages-item__icon"><img src="img/home-icon1.svg" alt=""></div>
+								<div class="home-advantages-item__text">
+									<p>Гарантия <br>совместимости</p>
+								</div>
+							</div>
+							<div class="home-advantages-item">
+								<div class="home-advantages-item__icon"><img src="img/home-icon2.svg" alt=""></div>
+								<div class="home-advantages-item__text">
+									<p>Быстрая <br>доставка</p>
+								</div>
+							</div>
+							<div class="home-advantages-item">
+								<div class="home-advantages-item__icon"><img src="img/home-icon3.svg" alt=""></div>
+								<div class="home-advantages-item__text">
+									<p>Вернем деньги, если не <br>подойдет или не понадобится</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="home-order">
+							<h3>Профессионально подберем и доставим ремкомплект для любой рулевой рейки</h3>
+
+							<form method="post" class="form">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<label>
+											<select name="select" class="select-my">
+												<option value="Марка авто">Марка авто</option>
+												<option value="Audi">Audi</option>
+												<option value="BMW">BMW</option>
+											</select>
+										</label>
+									</div>
+									<div class="col-12 col-sm-6">
+										<label>
+											<select name="select" class="select-my">
+												<option value="Модель авто">Модель авто</option>
+												<option value="Audi">Audi</option>
+												<option value="BMW">BMW</option>
+											</select>
+										</label>
+									</div>
+									<div class="col-12 col-sm-6">
+										<label>
+											<select name="select" class="select-my">
+												<option value="Тип рулевой рейки">Тип рулевой рейки</option>
+												<option value="Audi">Audi</option>
+												<option value="BMW">BMW</option>
+											</select>
+										</label>
+									</div>
+									<div class="col-12 col-sm-6">
+										<label>
+											<select name="select" class="select-my">
+												<option value="Стоимость ремкомплекта">Стоимость ремкомплекта</option>
+												<option value="Audi">Audi</option>
+												<option value="BMW">BMW</option>
+											</select>
+										</label>
+									</div>
+
+									<div class="col-12 col-sm-6">
+										<label>
+											<input type="text" name="name" placeholder="ФИО">
+										</label>
+										<label>
+											<input type="text" name="phone" placeholder="Телефон">
+										</label>
+									</div>
+
+									<div class="col-12 col-sm-6">
+										<label>
+											<input type="text" name="number" placeholder="Индекс">
+										</label>
+
+										<button type="submit" class="btn btn-accent">заказать ремкомплект</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="home-image"><img src="img/home-image.png" alt="">
+						<div class="home-contacts">
+							<span>Бесплатно по РФ</span>
+							<a href="tel:+78002018706" class="tel">8 800 2018 706</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<h2>Обладаем непревзойденной экспертизой</h2>
+					<div class="subtitle">в вопросах рулевого управления</div>
+				</div>
+
+				<div class="col-12 col-lg-7">
+					<div class="advantages-wrapper">
+						<div class="advantages-col">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+								<div class="advantages-box__text">
+									<p>Ремкомплекты состоят из оригинальных OEM-комплектующих</p>
+								</div>
+							</div>
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+								<div class="advantages-box__text">
+									<p>Всегда в наличии ремкомплекты рулевых реек на любые марки автомобилей</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="advantages-col">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+								<div class="advantages-box__text">
+									<p>Комплектуем сальниками, втулками, резиновыми уплотнениями, подшипниками</p>
+								</div>
+							</div>
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+								<div class="advantages-box__text">
+									<p>Даём рекомендации по дальнейшей эксплуатации автомобиля.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="technology">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-7 order-lg-1">
+					<div class="technology-content">
+						<h2>Собственная уникальная технология</h2>
+						<div class="subtitle">устранения стука в рулевых рейках</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5">
+					<div class="technology-image"><img src="img/technology-img.jpg" alt=""></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="technology-wrapper">
+						<div class="technology-box">
+							<div class="technology-box__icon"><img src="img/technology-icon1.svg" alt=""></div>
+							<div class="technology-box__text">
+								<p>Каждый ремкомплект содержит уникальную пружину, использование которой позволяет устранить стук любой
+									рулевой рейки.
+									Инструкция по установке в комплекте</p>
+							</div>
+						</div>
+						<div class="technology-box">
+							<div class="technology-box__icon"><img src="img/technology-icon2.svg" alt=""></div>
+							<div class="technology-box__text">
+								<p>Втулки изготовлены из высококачественного антифрикционного пластика. Срок службы втулки не менее 200
+									т.км.</p>
+							</div>
+						</div>
+						<div class="technology-box">
+							<div class="technology-box__icon"><img src="img/technology-icon3.svg" alt=""></div>
+							<div class="technology-box__text">
+								<p>Сальники и резиновые уплотнения только оригинального производства. По Вашему желанию возможна
+									доукомплектация
+									«ремонтными» размерами (если рулевому штоку предстоит шлифовка)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="possibilities">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="possibilities-content">
+						<h2>Не переплачивайте за рулевую рейку. Есть ремкомплект!</h2>
+						<div class="subtitle">Что можно устранить с помощью ремкомплекта?</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="possibilities-image"><img src="img/possibilities-image.png" alt=""></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 mb-32">
+					<div class="possibilities-box possibilities-box1">
+						<div class="possibilities-box__icon"><img src="img/icon1.svg" alt=""></div>
+						<div class="possibilities-box__body">
+							<h3>Стук рулевой рейки</h3>
+							<div class="box-text">
+								<p>Стук при вращении рулевого колеса, стук при движении по неровной дороге.</p>
+							</div>
+							<h4>Что понадобится:</h4>
+							<ul>
+								<li>правая опорная втулка</li>
+								<li>прижимной механизм с пружиной и фолье-вставкой</li>
+								<li>подшипник распределителя</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-32">
+					<div class="possibilities-box possibilities-box2">
+						<div class="possibilities-box__icon"><img src="img/icon2.svg" alt=""></div>
+						<div class="possibilities-box__body">
+							<h3>Течь жидкости ГУР</h3>
+							<div class="box-text">
+								<p>Тяжелый руль, следы масла под автомобилем. Гул насоса гидроусилителя.</p>
+							</div>
+							<h4>Что понадобится:</h4>
+							<ul>
+								<li>сальники высокого давления</li>
+								<li>сальники низкого давления</li>
+								<li>резиновые уплотнения</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-32">
+					<div class="possibilities-box possibilities-box3">
+						<div class="possibilities-box__icon"><img src="img/icon3.svg" alt=""></div>
+						<div class="possibilities-box__body">
+							<h3>Люфт рулевого колеса</h3>
+							<div class="box-text">
+								<p>При холостом ходе руля более 10% автомобиль чувствителен к колейности и неустойчив при движении по
+									прямой.</p>
+							</div>
+							<h4>Что понадобится:</h4>
+							<ul>
+								<li>прижимной механизм с пружиной <br>и фолье-вставкой</li>
+								<li>подшипник распределителя</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-5 mb-32">
+					<div class="possibilities-box possibilities-box4">
+						<div class="possibilities-box__icon"><img src="img/icon4.svg" alt=""></div>
+						<div class="possibilities-box__body">
+							<h3>Шум при повороте руля</h3>
+							<div class="box-text">
+								<p>Шум в салоне автомобиля при вращении рулевого колеса. Подклинивание рулевого колеса при вращении.</p>
+							</div>
+							<h4>Что понадобится:</h4>
+							<ul>
+								<li>упорный подшипник электрической рулевой рейки</li>
+								<li>приводной ремень рулевой рейки</li>
+								<li>комплект стальных прецизионных шаров</li>
+								<li>оригинальная тефлоновая смазка узла ШВП</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-32">
+					<div class="possibilities-box possibilities-box5">
+						<div class="possibilities-box__icon"><img src="img/icon5.svg" alt=""></div>
+						<div class="possibilities-box__body">
+							<h3>Затруднение вращения руля</h3>
+							<div class="box-text">
+								<p>Руль вращается неравномерно.</p>
+							</div>
+							<h4>Что понадобится:</h4>
+							<ul>
+								<li>тефлоновые кольца распределителя</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-32">
+					<div class="possibilities-box possibilities-box6">
+						<div class="possibilities-box__icon"><img src="img/icon6.svg" alt=""></div>
+						<div class="possibilities-box__body">
+							<h3>Ошибки ЭУР</h3>
+							<div class="box-text">
+								<p>Горит лампа неисправности электроусилителя. Рулевое колесо тяжело вращается.</p>
+							</div>
+							<h4>Что понадобится:</h4>
+							<ul>
+								<li>следует обратиться к нам на сервис, мы обязательно поможем!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="call-wrapper">
+						<div class="subtitle">Узнали признаки неисправности своего автомобиля?</div>
+						<div class="call-wrapper__text">
+							<p>Подбор ремкомплекта рулевой рейки</p>
+							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">заказать
+								ремкомплект</a>
+						</div>
+					</div>
+
+					<div class="about-advantages-wrapper">
+						<div class="about-advantages-box">
+							<div class="about-advantages-box__icon"><img src="img/about-icon1.svg" alt=""></div>
+							<div class="about-advantages-box__text">
+								<h4>Быстро отправляем</h4>
+								<div class="box-text">
+									<p>Отправляем в день <br>заказа (по будням)</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-advantages-box">
+							<div class="about-advantages-box__icon"><img src="img/about-icon2.svg" alt=""></div>
+							<div class="about-advantages-box__text">
+								<h4>Легкий возврат</h4>
+								<div class="box-text">
+									<p>Ремкомплект не пригодился? Можете вернуть в течение 14 дней</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-advantages-box">
+							<div class="about-advantages-box__icon"><img src="img/about-icon3.svg" alt=""></div>
+							<div class="about-advantages-box__text">
+								<h4>Помощь в подборе</h4>
+								<div class="box-text">
+									<p>Поможем подобрать любые комплектующие для ремонта</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="history-company">
+						<h2>за 9 лет</h2>
+						<div class="subtitle">успешной работы PST Service Russia</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="about-history-box">
+								<h3>32000+</h3>
+								<div class="box-text">
+									<p>ремкомплектов продано</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="about-history-box">
+								<h3>14400+</h3>
+								<div class="box-text">
+									<p>рулевых реек восстановлено</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="about-history-box">
+								<h3>8600+</h3>
+								<div class="box-text">
+									<p>оригинальных и восстановленных реек продано</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="about-history-box">
+								<h3>520+</h3>
+								<div class="box-text">
+									<p>оптовых клиентов сотрудничают с нами постоянно</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="benefit">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="benefit-content">
+						<h2>Что выгоднее:</h2>
+						<div class="subtitle">купить рулевую рейку или восстановить самостоятельно?</div>
+
+						<div class="benefit-wrapper">
+							<div class="benefit-advantages">
+								<h4>Ремкомплекты от компании PST Service Russia</h4>
+								<p><strong class="color-accent">До 85% дешевле</strong> покупки новой оригинальной рейки</p>
+								<p><strong class="color-accent">На 100% надёжнее</strong> любого аналога</p>
+							</div>
+
+							<div class="statistic">
+								<p><strong>9 из 10</strong> реек подлежат ремонту и продолжают исправно служить</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div class="benefit-image"><img src="img/benefit-img.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="manufacturers">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6">
+					<div class="manufacturers-logos">
+						<div class="manufacturers-logos__item"><img src="img/manufacturer1.png" alt=""></div>
+						<div class="manufacturers-logos__item"><img src="img/manufacturer2.png" alt=""></div>
+						<div class="manufacturers-logos__item"><img src="img/manufacturer3.png" alt=""></div>
+						<div class="manufacturers-logos__item"><img src="img/manufacturer4.png" alt=""></div>
+						<div class="manufacturers-logos__item"><img src="img/manufacturer5.png" alt=""></div>
+						<div class="manufacturers-logos__item"><img src="img/manufacturer6.png" alt=""></div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="manufacturers-wrapper">
+						<div class="manufacturers-box">
+							<h4 class="color-accent">Производители <br>сальников OEM:</h4>
+							<p>NOK, NAK, TRANSTEC, CORTECO, KACO, KOS, CFW</p>
+						</div>
+						<div class="manufacturers-box">
+							<h4 class="color-accent">Производители подшипников OEM:</h4>
+							<p>SKF, CW, NTN, SNR, <br>KOYO, INA</p>
+						</div>
+						<div class="manufacturers-box">
+							<h4 class="color-accent">Производители <br>резиновых уплотнений:</h4>
+							<p>NOK, Япония</p>
+						</div>
+						<div class="manufacturers-box">
+							<h4 class="color-accent">Производители втулок <br>и тефлоновых колец:</h4>
+							<p>PST, собственное производство на заводе-производителе OEM</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="reviews">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-10">
+					<h2>
+						<span>95%</span>
+						клиентов довольны <br>нашими ремкомплектами
+					</h2>
+				</div>
+				<div class="col-12 col-lg-2">
+					<div class="slider-nav reviews-slider__nav"></div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-12">
+					<div class="reviews-slider">
+						<div class="slide">
+							<div class="reviews-box reviews-box1">
+								<div class="box-text">
+									<p>Качество, все подошло идеально. Комплектация полная. Недостатки отсутствуют. Заказ пришёл быстро
+										продавец
+										молодец,
+										рекомендую к заказу. Упакован отлично.</p>
+								</div>
+
+								<div class="reviews-box__name">Илья М.</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box reviews-box2">
+								<div class="box-text">
+									<p>Качество, цена!
+										Сразу после получения отдали мастеру в работу. Выгоднее покупки новой рейки в разы! Обеспечит
+										комфортное и
+										безопасное
+										вождение. полный ремкомплект для восстановления рейки. продавец отправил все быстро и в срок! пришло
+										хорошо
+										упаковано.
+										все как в описании. товар качественный. рекомендую</p>
+								</div>
+
+								<div class="reviews-box__name">Галина М.</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="reviews-box reviews-box3">
+								<div class="box-text">
+									<p>Достоинства: Дешевле чем в других магазинах Недостатки:
+										Нет Комментарий: Ремкомплект идеально подошёл для рулевой рейки Мерседес ML320 W163. Все, что
+										требуется для
+										переборки
+										рейки, есть в этом наборе. Отдельное спасибо продавцу за подход к покупателю. Учёл все пожелания по
+										доставке, предложил
+										удобный вариант, благодаря чему получили посылку в короткие сроки. Продавца рекомендую.</p>
+								</div>
+
+								<div class="reviews-box__name">Екатерина С.</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="steering">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-10">
+					<h2>
+						Ремкомплекты рулевых реек
+					</h2>
+				</div>
+				<div class="col-12 col-lg-2">
+					<div class="slider-nav steering-slider__nav"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="steering-slider">
+						<div class="slide">
+							<div class="steering-box">
+								<div class="steering-box__img"><img src="img/complect1.jpg" alt=""></div>
+								<div class="steering-box__text">
+									<p>Ремкомплект рулевой рейки ГУР Volkswagen Transporter T4 1991-2003</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="steering-box">
+								<div class="steering-box__img"><img src="img/complect2.jpg" alt=""></div>
+								<div class="steering-box__text">
+									<p>Ремкомплект рулевой рейки ГУР Audi A4 B5 ZF 1997-2003</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="steering-box">
+								<div class="steering-box__img"><img src="img/complect3.jpg" alt=""></div>
+								<div class="steering-box__text">
+									<p>Ремкомплект рулевой рейки без ГУР Toyota RAV 4 <br>III 2007-2013</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="steering-box">
+								<div class="steering-box__img"><img src="img/complect4.jpg" alt=""></div>
+								<div class="steering-box__text">
+									<p>Ремкомплект рулевой рейки ЭУР Ford Focus III</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="steering-box">
+								<div class="steering-box__img"><img src="img/complect4.jpg" alt=""></div>
+								<div class="steering-box__text">
+									<p>Ремкомплект рулевой рейки ЭУР Ford Focus III</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="callback-sales">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<h2><strong>Закажите ремкомплект</strong> рулевой рейки прямо сейчас, и мы доставим его
+						<strong>*бесплатно!</strong>
+					</h2>
+
+					<div class="callback-sales-wrapper">
+						<div class="timer-sale">
+							<div class="timer-sale-box">
+								<p>до окончания акции осталось:</p>
+
+								<div class="countdown-time"></div>
+							</div>
+
+							<div class="sale-description">*Бесплатная доставка осуществляется только Почтой РФ!</div>
+						</div>
+
+						<form method="post" class="form">
+							<div class="row">
+								<div class="col-12">
+									<h3 class="color-accent">Заполните форму и доставка будет бесплатной!</h3>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label>
+										<select name="select" class="select-my">
+											<option value="Марка авто">Марка авто</option>
+											<option value="Audi">Audi</option>
+											<option value="BMW">BMW</option>
+										</select>
+									</label>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label>
+										<select name="select" class="select-my">
+											<option value="Модель авто">Модель авто</option>
+											<option value="Audi">Audi</option>
+											<option value="BMW">BMW</option>
+										</select>
+									</label>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label>
+										<select name="select" class="select-my">
+											<option value="Тип рулевой рейки">Тип рулевой рейки</option>
+											<option value="Audi">Audi</option>
+											<option value="BMW">BMW</option>
+										</select>
+									</label>
+								</div>
+								<div class="col-12 col-sm-6">
+									<label>
+										<select name="select" class="select-my">
+											<option value="Стоимость ремкомплекта">Стоимость ремкомплекта</option>
+											<option value="Audi">Audi</option>
+											<option value="BMW">BMW</option>
+										</select>
+									</label>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<label>
+										<input type="text" name="name" placeholder="ФИО">
+									</label>
+									<label>
+										<input type="text" name="phone" placeholder="Телефон">
+									</label>
+								</div>
+
+								<div class="col-12 col-sm-6">
+									<label>
+										<input type="text" name="number" placeholder="Индекс">
+									</label>
+
+									<button type="submit" class="btn btn-accent">заказать ремкомплект</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<div class="callback-sales__img"><img src="img/men.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer-top">
+						<div class="row">
+							<div class="col-12 col-lg-10 d-flex align-items-center flex-wrap">
+								<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+								<div class="description-company">Ремкомплекты для рулевых реек с доставкой</div>
+
+								<a href="#" class="btn btn-blue" data-bs-target="#callbackModal" data-bs-toggle="modal">обратный
+									звонок</a>
+
+								<div class="footer-contact">
+									<div class="header-contacts">
+										<a href="whatsapp://send?phone=+79379111234" class="messenger-link"><img src="img/whatsapp.svg"
+												alt=""></a>
+										<a href="viber://chat?number=+79379111234" class="messenger-link"><img src="img/viber.svg"
+												alt=""></a>
+										<a href="tel:+79379111234" class="phone">+7 937 911 1234</a>
+									</div>
+									<a href="#" class="vk-link"><img src="img/vk.svg" alt="">pstrussia</a>
+								</div>
+
+								<div class="footer-wrapper">
+									<div class="footer-box">
+										<h4>график работы</h4>
+										<p><strong>пн-пт:</strong> с 09.00 до 18.00</p>
+										<p><strong>сб-вс:</strong> только приём заявок</p>
+									</div>
+
+									<div class="footer-box">
+										<h4>Бесплатно по РФ</h4>
+										<a href="tel:+78002018706" class="link-phone">8 800 2018 706</a>
+									</div>
+
+									<div class="footer-box">
+										<div class="address">г. Пенза, ул. Строителей, 4</div>
+										<a href="mailto:info@pstrussia.ru" class="link-phone link-mail">info@pstrussia.ru</a>
+									</div>
+
+									<a href="#" class="link-developer">
+										<span>разработано</span>
+										<img src="img/developer.svg" alt="">
+									</a>
+								</div>
+
+								
+							</div>
+							<div class="col-12 col-lg-2">
+								<a href="#" class="link-map">
+									<img src="img/map.png" alt="" class="link-map__bg">
+									<span>проложить маршрут</span>
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#next"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+
+
+					</div>
+
+					<div class="footer-bottom">
+						<a href="#" class="color-blue" target="_blank">политика конфиденциальности</a>
+						<div class="copyright">™ PST Tools Russia / 2023</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jQuery.countdownTimer.min.js"></script>
+	<script src="js/jQuery.countdownTimer-ru.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

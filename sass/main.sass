@@ -1,0 +1,608 @@
+@import "vars"
+
+// home
+.home
+	background: url('../img/home-bg.png') no-repeat center top
+	background-size: cover
+	padding: 0 0 60px
+	position: relative
+	z-index: 1
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		filter: blur(17.5px)
+		background: linear-gradient(360deg, #13285F 2.36%, rgba(19, 40, 95, 0) 42.77%)
+		transform: matrix(-1, 0, 0, 1, 0, 0)
+	.subtitle
+		font-size: 38px
+
+.home-content
+	padding: 338px 66px 82px 61px
+	position: relative
+	z-index: 1
+	max-width: 739px
+	width: 100%
+	backdrop-filter: blur(27px)
+	border-radius: 20px
+	background: rgba(25, 53, 127, 0.7)
+	margin: -167px 0 0 -60px
+
+.subtitle
+	text-transform: uppercase
+	font-size: 48px
+	margin: 4px 0 0
+
+.home-image
+	position: relative
+	z-index: 1
+	width: 1391px
+	margin: 36px -380px -25px -225px
+
+.home-contacts
+	position: absolute
+	bottom: 0
+	right: 368px
+	bottom: 143px
+	text-align: right
+	span
+		text-transform: uppercase
+		display: block
+		font-weight: 300
+
+.tel
+	font-size: 48px
+	font-weight: bold
+	margin: 2px 0 0
+	color: #fff
+	&:hover
+		color: $accent
+
+.home-advantages
+	margin: 52px 0 57px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: space-between
+	font-size: 16px
+	&-item
+		display: flex
+		align-items: center
+		&__icon
+			width: 47px
+			height: 47px
+			min-width: 47px
+			margin: 0 10px 0 0
+			border-radius: 50%
+			@include d-flex
+
+.home-order
+	h3
+		font-size: 32px
+		margin: 0 0 23px
+		max-width: 517px
+
+.form
+	max-width: 554px
+	[type="submit"]
+		width: 100%
+
+// advantages
+.advantages
+	margin: 74px 0 180px
+
+.advantages-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	flex-wrap: wrap
+
+.advantages-col
+	width: 387px
+	&:last-child
+		width: 404px
+
+.advantages-box
+	width: 100%
+	border: 1px solid #EC6E00
+	border-radius: 20px
+	margin: 0 0 30px
+	display: flex
+	align-items: start
+	padding: 30px
+	line-height: 29px
+	&__icon
+		@include d-flex
+		width: 62px
+		height: 62px
+		min-width: 62px
+		margin: 0 30px 0 0
+	&:last-child
+		margin: 0
+
+// technology
+.technology
+	margin: 0 0 157px
+
+.technology-content
+	max-width: 787px
+	margin: 0 10px 0 auto
+
+.technology-image
+	border-radius: 20px
+	max-width: 579px
+	width: 100%
+	@include d-flex
+	margin: 0 0 68px
+	img
+		border-radius: 20px
+
+.technology-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+
+.technology-box
+	display: flex
+	align-items: start
+	padding: 0 40px 0 0
+	margin: 0 40px 30px 0
+	border-right: 1px solid #EC6E00
+	width: 519px
+	font-weight: 300
+	&:last-child
+		margin: 0 0 30px
+		padding: 0
+		border: none
+		width: 529px
+	&:nth-child(2)
+		width: 451px
+	&__icon
+		@include d-flex
+		width: 50px
+		min-width: 50px
+		margin: 0 30px 0 0
+
+// possibilities
+.possibilities
+	position: relative
+	margin: 0 0 148px
+
+.possibilities-image
+	position: relative
+	z-index: 1
+	margin: -25px 0 19px -30px
+	min-width: 1194px
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		width: 814px
+		height: 433px
+		top: -53px
+		left: 77px
+		filter: blur(232.5px)
+		background: #076AB4
+		border-radius: 465px
+
+.possibilities-content
+	width: calc(100% + 10px)
+
+.possibilities-box
+	height: 100%
+	width: 100%
+	background: linear-gradient(116.4deg, #19357F 2.27%, rgba(25, 53, 127, 0) 98.01%)
+	filter: drop-shadow(50px 50px 75px rgba(0, 0, 0, 0.25))
+	border-radius: 20px
+	padding: 30px
+	display: flex
+	flex-direction: column
+	&__icon
+		height: 39px
+		margin: 0 0 18px
+		img
+			max-height: 100%
+	&__body
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: column
+	h3
+		font-weight: bold
+		text-transform: uppercase
+		margin: 0 0 18px
+	.box-text
+		margin: auto 0
+	h4
+		margin: 18px 0
+		font-weight: bold
+	ul
+		font-weight: 300
+		padding: 0 0 0 30px
+
+.possibilities-box1
+	width: calc(100% - 30px)
+
+.possibilities-box2
+	margin: 0 0 0 -30px
+	width: calc(100% - 15px)
+
+.possibilities-box3
+	margin: 0 0 0 -45px
+	width: calc(100% + 45px)
+
+.possibilities-box4
+	width: calc(100% + 15px)
+
+.possibilities-box5
+	width: calc(100% - 30px)
+	margin: 0 auto
+
+.possibilities-box6
+	margin: 0 0 0 -15px
+	width: calc(100% + 15px)
+
+// about
+.about
+	position: relative
+	z-index: -1
+	&::before
+		content: ''
+		position: absolute
+		background: #076AB4
+		filter: blur(232.5px)
+		width: 886px
+		height: 878px
+		z-index: -1
+		border-radius: 465px
+	&::after
+		content: ''
+		position: absolute
+		z-index: -1
+		background: #09122B
+		filter: blur(232.5px)
+		width: 886px
+		height: 878px
+		border-radius: 465px
+		right: -159px
+		top: 157px
+	h2
+		font-size: 173px
+
+.call-wrapper
+	width: 100%
+	max-width: 1298px
+	margin: 0 auto 54px
+	background: linear-gradient(90.76deg, #000000 0.76%, #19357F 100.76%)
+	box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1)
+	border-radius: 20px
+	padding: 24px 61px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	.subtitle
+		margin: 0
+		width: calc(100% - 420px)
+		padding: 0 40px 0 0
+	&__text
+		max-width: 420px
+		padding: 0 0 0 40px
+		border-left: 1px solid #fff
+		p
+			font-weight: bold
+			margin: 0 0 22px
+	.btn
+		padding: 11px 48px
+
+.about-advantages-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+
+.about-advantages-box
+	display: flex
+	align-items: center
+	margin: 0 60px 40px 0
+	width: 100%
+	&:last-child
+		margin: 0 0 40px
+	&__icon
+		width: 70px
+		height: 70px
+		min-width: 70px
+		@include d-flex
+		margin: 0 30px 0 0
+	&:first-child
+		max-width: 360px
+	&:nth-child(2)
+		max-width: 426px
+	&:last-child
+		max-width: 380px
+	h4
+		font-weight: bold
+		text-transform: uppercase
+		margin: 0 0 9px
+	.box-text
+		font-weight: 300
+
+.about-history-box
+	margin: 0 0 43px
+	font-weight: bold
+	font-size: 32px
+	text-transform: uppercase
+	h3
+		font-size: 96px
+		color: $accent
+
+.history-company
+	position: relative
+	z-index: 1
+	padding: 0 0 83px
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 859px
+		height: 1px
+		background: #fff
+	.subtitle
+		font-size: 68px
+		font-weight: bold
+		max-width: 618px
+
+// benefit
+.benefit
+	margin: 69px 0 131px
+	h2
+		color: $accent
+		margin: 0 0 30px
+
+.benefit-image
+	max-width: 724px
+	width: 100%
+	@include d-flex
+
+.benefit-content
+	margin: 135px 0 0
+
+.benefit-wrapper
+	display: flex
+	align-items: flex-end
+	margin: 65px 0 0
+
+.benefit-advantages
+	background: linear-gradient(119deg, #19357F 2.98%, rgba(25, 53, 127, 0) 100%)
+	filter: drop-shadow(50px 50px 75px rgba(0, 0, 0, 0.25))
+	border-radius: 20px
+	padding: 40px
+	max-width: 544px
+	width: 100%
+	font-size: 32px
+	h4
+		margin: 0 0 9px
+		font-weight: bold
+		text-transform: uppercase
+
+.statistic
+	margin: 0 -489px 0 55px
+	border: 1px solid #EC6E00
+	border-radius: 20px
+	width: 489px
+	padding: 24px 35px
+
+// manufacturers
+.manufacturers-logos
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: space-between
+	&__item
+		@include d-flex
+		margin: 0 0 30px
+
+.manufacturers-wrapper
+	width: 100%
+	max-width: 640px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 0 0 0 auto
+
+.manufacturers-box
+	margin: 0 0 30px
+	max-width: 310px
+	h4
+		font-size: 32px
+		margin: 0 0 5px
+	&:last-child
+		margin: 0
+
+// reviews
+.reviews
+	margin: 200px 0
+	h2
+		display: flex
+		align-items: center
+		position: relative
+		z-index: 1
+		&::before
+			content: ''
+			position: absolute
+			bottom: 45px
+			left: calc(100% - 108px)
+			background: #fff
+			margin: 0 0 0 19px
+			width: 701px
+			height: 1px
+			z-index: -1
+		span
+			margin: 0 25px 0 0
+			font-size: 168px
+
+.reviews-slider
+	margin: 52px 0 0
+	width: calc(100% + 220px)
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		right: -102px
+		top: -60px
+		background: linear-gradient(270deg, #13285F 24.03%, rgba(19, 40, 95, 0) 100%)
+		width: 574px
+		height: 466px
+		z-index: 1
+	.slick-slide
+		margin: 0 30px 0 0
+
+.reviews-box
+	border: 1px solid #EC6E00
+	border-radius: 20px
+	padding: 60px
+	width: 445px
+	font-weight: 300
+	&__name
+		margin: 30px 0 0
+
+.reviews-box2
+	width: 870px
+
+.reviews-box3
+	width: 939px
+
+// steering
+.steering
+	margin: 0 0 188px
+	position: relative
+	z-index: -1
+	&::before
+		content: ''
+		position: absolute
+		top: -424px
+		left: -793px
+		background: #076AB4
+		filter: blur(232.5px)
+		z-index: -1
+		width: 1117px
+		height: 1290px
+
+.steering-slider
+	margin: 60px 0 0
+	width: calc(100% + 220px)
+	position: relative
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		right: -102px
+		bottom: 0
+		background: linear-gradient(270deg, #13285F 24.03%, rgba(19, 40, 95, 0) 100%)
+		width: 803px
+		height: 412px
+		z-index: 1
+	.slide
+		margin: 0 30px 0 0
+
+.steering-box
+	width: 347px
+	&__img
+		width: 100%
+		height: 262px
+		border-radius: 20px
+		@include d-flex
+		margin: 0 0 35px
+		img
+			border-radius: 20px
+	&__text
+		max-width: 277px
+
+// callback-sales
+.callback-sales
+	// margin: 0 0 166px
+	h2
+		font-weight: normal
+		strong
+			font-weight: bold
+	.form
+		h3
+			margin: 0 0 20px
+	&__img
+		min-width: 481px
+		@include d-flex
+		margin: -76px -170px -153px 0				
+
+.callback-sales-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.timer-sale
+	margin: 44px auto 0 0
+
+.timer-sale-box
+	background: linear-gradient(119.55deg, #19357F 1.27%, rgba(25, 53, 127, 0) 100%)
+	filter: drop-shadow(50px 50px 75px rgba(0, 0, 0, 0.25))
+	border-radius: 20px
+	width: 501px
+	display: flex
+	align-items: center
+	padding: 30px
+	p
+		font-size: 32px
+		font-weight: 300
+		max-width: 237px
+		margin: 0 auto 0 0
+
+.countdown-time
+	font-family: $default-font
+	font-size: 14px
+	font-weight: normal
+	width: fit-content
+	border: none
+	border-radius: 0
+	background: transparent
+
+.numberDisplay
+	font-size: 48px
+
+.timerDisplay
+	padding: 0
+	display: flex
+	align-items: flex-start
+
+.displaySection
+	border: none
+	font-size: 14px
+	position: relative
+	margin: 0 30px 0 0
+	&::after
+		content: ':'
+		font-size: 48px
+		position: absolute
+		right: -20px
+		top: 0
+	&:last-child
+		margin: 0
+		&::after
+			display: none
+
+.periodDisplay
+	text-transform: lowercase
+
+.sale-description
+	width: 100%
+	margin: 29px 0 0
+	font-size: 16px
+	display: block

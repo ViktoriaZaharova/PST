@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Light.eot");
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaCond-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaCond-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Regular.eot");
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaCond-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/ProximaNova/ProximaNovaCond-SemiBold.eot");
+  src: url("../fonts/ProximaNova/ProximaNovaCond-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaCond-SemiBold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaCond-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Bold.eot");
+  src: url("../fonts/ProximaNova/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNovaCond-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNovaCond-Bold.ttf") format("truetype");
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 24px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "ProximaNova", sans-serif;
+  font-weight: normal;
+  background: #13285F;
+  color: #fff;
+  z-index: 3;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  width: 100%;
+  height: 46px;
+  background: transparent;
+  color: #fff;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: #fff;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #fff;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: #fff;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+  color: #fff;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #fff;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 16px;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button, .btn {
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "ProximaNova", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 11px 40px;
+  font-size: 20px;
+  height: 46px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-accent {
+  -webkit-box-shadow: 0px 4px 16px rgba(25, 53, 127, 0.15);
+          box-shadow: 0px 4px 16px rgba(25, 53, 127, 0.15);
+  background: #EC6E00;
+  color: #fff;
+}
+.btn-accent:hover {
+  background: #315ED6;
+  color: #fff;
+}
+
+.btn-blue {
+  background: #315ED6;
+  color: #fff;
+}
+.btn-blue:hover {
+  background: #EC6E00;
+  color: #fff;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 430px;
+}
+
+h2 {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.container {
+  max-width: 1505px;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+.row > * {
+  padding: 0 15px;
+}
+
+.color-accent {
+  color: #EC6E00;
+}
+
+.color-blue {
+  color: #315ED6;
+}
+
+a.color-blue:hover {
+  color: #EC6E00;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 20px;
+}
+.slider-nav .slick-next {
+  margin: 0 0 0 52px;
+}
+
+.slick-arrow {
+  opacity: 1;
+  z-index: 1;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: transparent;
+  width: 39px;
+  height: 72px;
+  fill: none;
+  stroke: #EC6E00;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slick-arrow:hover, .slick-arrow:focus-visible {
+  fill: #EC6E00;
+}
+
+.select-my {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/select-arrow.svg") no-repeat calc(100% - 23px) center;
+  background-size: 14px;
+  cursor: pointer;
+}
+
+.label-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 15px 0 0;
+  line-height: 1.14;
+}
+
+.inp-check {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 12px 0 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+
+.inp-check:checked ~ .checkbox-custom {
+  background: #fff url("../img/check-black.svg") no-repeat center;
+  background-size: 8px;
+}

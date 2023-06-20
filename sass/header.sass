@@ -1,0 +1,47 @@
+@import "vars"
+
+header
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	z-index: 3
+	padding: 50px 0
+
+.logo
+	@include d-flex
+	max-width: 116px
+	width: 100%
+	margin: 0 40px 0 0
+
+.description-company	
+	font-size: 20px
+	font-weight: 600
+	text-transform: uppercase
+	max-width: 250px
+	margin: 0 auto 0 0
+
+.btn-burger
+	fill: #fff
+	width: 38px
+	height: 34px
+	@include d-flex
+	margin: 0 0 0 92px
+	cursor: pointer
+	&:hover
+		fill: $accent
+
+.header-contacts
+	display: flex
+	align-items: center
+	margin: 0 64px 0 0
+
+.phone
+	color: #fff
+	font-size: 24px
+	font-weight: bold
+	&:hover
+		color: $accent
+
+.messenger-link
+	margin: 0 7px 0 0							

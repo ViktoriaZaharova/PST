@@ -19,6 +19,7 @@
   background: linear-gradient(360deg, #13285F 2.36%, rgba(19, 40, 95, 0) 42.77%);
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
           transform: matrix(-1, 0, 0, 1, 0, 0);
+  will-change: transform;
 }
 .home .subtitle {
   font-size: 38px;
@@ -291,6 +292,7 @@
   left: 77px;
   -webkit-filter: blur(232.5px);
           filter: blur(232.5px);
+  will-change: transform;
   background: #076AB4;
   border-radius: 465px;
 }
@@ -305,6 +307,10 @@
   background: linear-gradient(116.4deg, #19357F 2.27%, rgba(25, 53, 127, 0) 98.01%);
   -webkit-filter: drop-shadow(50px 50px 75px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(50px 50px 75px rgba(0, 0, 0, 0.25));
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   border-radius: 20px;
   padding: 30px;
   display: -webkit-box;
@@ -388,6 +394,7 @@
   background: #076AB4;
   -webkit-filter: blur(232.5px);
           filter: blur(232.5px);
+  will-change: transform;
   width: 886px;
   height: 878px;
   z-index: -1;
@@ -400,6 +407,7 @@
   background: #09122B;
   -webkit-filter: blur(232.5px);
           filter: blur(232.5px);
+  will-change: transform;
   width: 886px;
   height: 878px;
   border-radius: 465px;
@@ -736,6 +744,7 @@
   background: #076AB4;
   -webkit-filter: blur(232.5px);
           filter: blur(232.5px);
+  will-change: transform;
   z-index: -1;
   width: 1117px;
   height: 1290px;
